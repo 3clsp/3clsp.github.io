@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FAQs
-nav_order: 6
+nav_order: 7
 ---
 
 ## My `clangd` server won't start up?
