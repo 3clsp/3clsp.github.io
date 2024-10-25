@@ -12,16 +12,16 @@ nav_order: 1
 
 ### [](#header-3)Basics
 
-You first have to clone the CheckedC clang repo from https://github.com/Vedaant-Rajoo/checkedc-llvm-project.git.
+You first have to clone the CheckedC clang repo from https://github.com/3clsp/checkedc-llvm-project.git.
 
 ```sh
-git clone https://github.com/Vedaant-Rajoo/checkedc-llvm-project.git
+git clone https://github.com/3clsp/checkedc-llvm-project.git
 cd checkedc-llvm-project
 
 # Get a copy of the Checked C system headers. Use Microsoft's
 # "checkedc" repository regardless of which "checkedc-clang"
 # repository you use.
-git clone https://github.com/microsoft/checkedc llvm/projects/checkedc-wrapper/checkedc
+git clone https://github.com/checkedc/checkedc llvm/projects/checkedc-wrapper/checkedc
 mkdir build && cd build
 cmake ../llvm -G Ninja -DLLVM_ENABLE_PROJECTS="clang;clang-tools-extra" -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_USE_SPLIT_DWARF=ON -DLLVM_OPTIMIZED_TABLEGEN=ON
 ninja clang 3c 3Cclangd
